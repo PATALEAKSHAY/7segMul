@@ -1,0 +1,95 @@
+BL51 BANKED LINKER/LOCATER V6.22.4.0                                                    11/12/2024  14:28:09  PAGE 1
+
+
+BL51 BANKED LINKER/LOCATER V6.22.4.0, INVOKED BY:
+C:\KEIL_V5\C51\BIN\BL51.EXE .\Objects\digital clock.obj TO .\Objects\digital clock PRINT (.\Listings\digital clock.m51) 
+>> CODE (0X0000-0X0FFF)
+
+
+MEMORY MODEL: SMALL
+
+
+INPUT MODULES INCLUDED:
+  .\Objects\digital clock.obj (DIGITAL_CLOCK)
+  C:\KEIL_V5\C51\LIB\C51S.LIB (?C_STARTUP)
+
+
+LINK MAP OF MODULE:  .\Objects\digital clock (DIGITAL_CLOCK)
+
+
+            TYPE    BASE      LENGTH    RELOCATION   SEGMENT NAME
+            -----------------------------------------------------
+
+            * * * * * * *   D A T A   M E M O R Y   * * * * * * *
+            REG     0000H     0008H     ABSOLUTE     "REG BANK 0"
+            IDATA   0008H     0001H     UNIT         ?STACK
+
+            * * * * * * *   C O D E   M E M O R Y   * * * * * * *
+            CODE    0000H     0003H     ABSOLUTE     
+                    0003H     07FDH                  *** GAP ***
+            CODE    0800H     005EH     UNIT         ?PR?MAIN?DIGITAL_CLOCK
+            CODE    085EH     000CH     UNIT         ?C_C51STARTUP
+
+
+
+OVERLAY MAP OF MODULE:   .\Objects\digital clock (DIGITAL_CLOCK)
+
+
+SEGMENT
+  +--> CALLED SEGMENT
+---------------------
+?C_C51STARTUP
+  +--> ?PR?MAIN?DIGITAL_CLOCK
+
+
+
+SYMBOL TABLE OF MODULE:  .\Objects\digital clock (DIGITAL_CLOCK)
+
+  VALUE           TYPE          NAME
+  ----------------------------------
+
+  -------         MODULE        DIGITAL_CLOCK
+  C:0000H         SYMBOL        _ICE_DUMMY_
+  D:0090H         PUBLIC        P1
+  D:00A0H         PUBLIC        P2
+  C:0800H         PUBLIC        main
+  B:0090H.0       PUBLIC        seg1
+  B:0090H.1       PUBLIC        seg2
+  B:0090H.2       PUBLIC        seg3
+  B:0090H.3       PUBLIC        seg4
+  -------         PROC          MAIN
+  -------         DO            
+BL51 BANKED LINKER/LOCATER V6.22.4.0                                                  11/12/2024  14:28:09  PAGE 2
+
+
+  D:0006H         SYMBOL        i
+  -------         ENDDO         
+  C:0800H         LINE#         6
+  C:0800H         LINE#         8
+  C:0808H         LINE#         9
+  C:0808H         LINE#         10
+  C:080AH         LINE#         11
+  C:080DH         LINE#         12
+  C:081BH         LINE#         13
+  C:081DH         LINE#         14
+  C:081FH         LINE#         15
+  C:0822H         LINE#         16
+  C:0830H         LINE#         17
+  C:0832H         LINE#         18
+  C:0834H         LINE#         19
+  C:0837H         LINE#         20
+  C:0845H         LINE#         21
+  C:0847H         LINE#         22
+  C:0849H         LINE#         23
+  C:084CH         LINE#         24
+  C:085AH         LINE#         25
+  C:085CH         LINE#         26
+  -------         ENDPROC       MAIN
+  -------         ENDMOD        DIGITAL_CLOCK
+
+******************************************************************************
+* RESTRICTED VERSION WITH 0800H BYTE CODE SIZE LIMIT; USED: 005EH BYTE ( 4%) *
+******************************************************************************
+
+Program Size: data=9.0 xdata=0 code=109
+LINK/LOCATE RUN COMPLETE.  0 WARNING(S),  0 ERROR(S)
